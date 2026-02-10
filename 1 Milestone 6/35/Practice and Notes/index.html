@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Engine Internals & Mechanisms</title>
+    <style>
+        :root {
+            --primary: #f7df1e;
+            --bg: #1e1e1e;
+            --text: #ffffff;
+            --secondary-bg: #2d2d2d;
+            --accent: #4ec9b0;
+            --code-bg: #000000;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: #000;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background: var(--secondary-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        h3 {
+            color: var(--accent);
+        }
+
+        code {
+            background-color: var(--code-bg);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            color: #ce9178;
+        }
+
+        pre {
+            background-color: var(--code-bg);
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            border-left: 4px solid var(--primary);
+        }
+
+        .workflow-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .workflow-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .workflow-list li::before {
+            content: "➔";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+        }
+
+        .pizza-box {
+            background: #444;
+            padding: 1rem;
+            border-left: 5px solid #ff5722;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Inside the JavaScript Engine</h1>
+    <p>Understanding V8, SpiderMonkey, and Asynchronous Execution</p>
+</header>
+
+<div class="container">
+
+    <section>
+        <h2>The General Workflow</h2>
+        <p>To understand why JavaScript is fast, we look at the internal pipeline engines use to turn text into machine action:</p>
+        <ul class="workflow-list">
+            <li><strong>Parsing:</strong> Code is turned into an Abstract Syntax Tree (AST).</li>
+            <li><strong>Compilation:</strong> A "Baseline Compiler" quickly turns AST into Bytecode.</li>
+            <li><strong>Execution:</strong> The engine runs bytecode immediately.</li>
+            <li><strong>Optimization:</strong> A "Profiler" watches for "hot code" and optimizes it into Machine Code.</li>
+        </ul>
+        
+    </section>
+
+    <section>
+        <h2>Engine Comparison</h2>
+        <h3>1. V8 (Chrome / Node.js)</h3>
+        <p>Uses <strong>Ignition</strong> (Interpreter) for fast startup and <strong>TurboFan</strong> (Optimizing Compiler) for high performance.</p>
+        <p><em>Example:</em> If <code>add(a, b)</code> always uses numbers, TurboFan generates specific machine code for numbers.</p>
+
+        <h3>2. SpiderMonkey (Firefox)</h3>
+        <p>The first JS engine. Uses a multi-tier strategy: Baseline Interpreter → Baseline Compiler → <strong>IonMonkey</strong> (Deep Optimizer).</p>
+    </section>
+
+    <section>
+        <h2>The Environment</h2>
+        <h3>Execution Context</h3>
+        <p>The "box" containing variables and code. There are two types: <strong>Global</strong> and <strong>Function</strong> contexts.</p>
+        
+        <h3>Call Stack (LIFO)</h3>
+        <p>Tracks where we are in the script. Last In, First Out.</p>
+        <pre><code>const a = 10;
+const first = () => {
+  second();
+  console.log("Hello I am first");
+};
+const second = () => {
+  third();
+};
+// Execution order: first -> second -> third</code></pre>
+    </section>
+
+    <section>
+        <h2>Concurrency Model</h2>
+        <p><strong>Single-threaded:</strong> Like a chef with one burner. One command at a time.</p>
+        
+        <h3>Synchronous</h3>
+        <p>Every line waits for the previous one. If a line is slow, the app "freezes."</p>
+
+        <h3>Asynchronous</h3>
+        <p>Start a task and move on. When finished, the engine notifies the program.</p>
+        <pre><code>console.log("Start");
+setTimeout(() => console.log("Async Task"), 3000);
+console.log("End");</code></pre>
+    </section>
+
+    <section>
+        <h2>Promises</h2>
+        <div class="pizza-box">
+            "Think of it like ordering a pizza: you receive a receipt (the Promise). The pizza is <strong>Pending</strong>. Eventually, it is <strong>Fulfilled</strong> (delivered) or <strong>Rejected</strong> (out of ingredients)."
+        </div>
+        <h3>Async / Await</h3>
+        <p>Syntactic sugar for Promises, making code look synchronous and readable.</p>
+        <pre><code>const loadData = async () => {
+    try {
+        const response = await fetch('url');
+        const data = await response.json();
+    } catch (err) {
+        console.log(err);
+    }
+}</code></pre>
+    </section>
+
+    <section>
+        <h2>The Event Loop</h2>
+        <p>The Event Loop's job: If the <strong>Call Stack</strong> is empty, take the first task from the <strong>Callback Queue</strong> and push it onto the Stack.</p>
+        
+    </section>
+
+</div>
+
+</body>
+</html>
