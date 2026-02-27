@@ -4,6 +4,8 @@ import Bottles from "./Components/Bottles/Bottles";
 
 const bottlePromise = fetch("./bottle.json").then((res) => res.json());
 
+// const bottlePromiseTwo = fetch("https://raw.githubusercontent.com/imtiazho/JsonData/refs/heads/main/bottles.json").then(res => res.json())
+
 function App() {
   // const waterBottles = [
   //   {
