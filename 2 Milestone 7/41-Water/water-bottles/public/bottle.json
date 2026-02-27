@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "brand": "Hydro Flask",
+    "capacity": "32oz",
+    "material": "Stainless Steel",
+    "isInsulated": true,
+    "colors": ["Blue", "Black", "Stone"],
+    "price": 44.95
+  },
+  {
+    "id": 2,
+    "brand": "Nalgene",
+    "capacity": "32oz",
+    "material": "Tritan Plastic",
+    "isInsulated": false,
+    "colors": ["Clear", "Trout Green", "Cosmo"],
+    "price": 16.99
+  },
+  {
+    "id": 3,
+    "brand": "YETI",
+    "capacity": "26oz",
+    "material": "Stainless Steel",
+    "isInsulated": true,
+    "colors": ["Navy", "Seafoam", "White"],
+    "price": 40.00
+  },
+  {
+    "id": 4,
+    "brand": "S'well",
+    "capacity": "17oz",
+    "material": "Stainless Steel",
+    "isInsulated": true,
+    "colors": ["Teakwood", "Moonstone"],
+    "price": 35.00
+  },
+  {
+    "id": 5,
+    "brand": "CamelBak",
+    "capacity": "25oz",
+    "material": "BPA-Free Plastic",
+    "isInsulated": false,
+    "colors": ["Charcoal", "Cardinal"],
+    "price": 15.00
+  }
+]
