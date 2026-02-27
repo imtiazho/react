@@ -1,6 +1,11 @@
 import React, { use, useEffect, useState } from "react";
 import Btottle from "./Btottle/Btottle";
-import { addToStoredCart, getStoredCart } from "../../Utilities/localStorage/LocalStorage";
+import {
+  addToStoredCart,
+  getStoredCart,
+  removeItem,
+} from "../../Utilities/localStorage/LocalStorage";
+import Cart from "../Cart/Cart";
 
 const Bottles = ({ bottlePromise }) => {
   const [cart, setCart] = useState([]);
@@ -12,18 +17,15 @@ const Bottles = ({ bottlePromise }) => {
     // console.log(storedCartIds);
 
     const storedCart = [];
-    for(const id of storedCartIds)
-    {
-        const cartBottle = bottle.find(btl => btl.id === id);
-        if(cartBottle)
-        {
-            storedCart.push(cartBottle);
-        }
+    for (const id of storedCartIds) {
+      const cartBottle = bottle.find((btl) => btl.id === id);
+      if (cartBottle) {
+        storedCart.push(cartBottle);
+      }
     }
 
     setCart(storedCart);
-    
-  }, [bottle])
+  }, [bottle]);
 
   const handleAddToCart = (botol) => {
     // console.log("Bottle will be added to cart", botol);
@@ -34,10 +36,16 @@ const Bottles = ({ bottlePromise }) => {
     addToStoredCart(botol.id);
   };
 
+  const removeFromCart = (id) => {
+    const remaining = cart.filter((btl) => btl.id !== id);
+    setCart(remaining);
+    removeItem(id);
+  };
   return (
     <div>
       <h3>Bottles: {bottle.length}</h3>
       <h3>Cart: {cart.length}</h3>
+      <Cart removeFromCart={removeFromCart} cart={cart}></Cart>
       {bottle.map((btl) => (
         <Btottle
           handleAddToCart={handleAddToCart}
