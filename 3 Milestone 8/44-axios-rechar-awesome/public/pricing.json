@@ -1,0 +1,29 @@
+[
+  {
+    "id": "opt-101-basic",
+    "path": "/subscribe/checkout/basic",
+    "tier": "Basic",
+    "price": 15,
+    "currency": "USD",
+    "billingCycle": "monthly",
+    "cta": "Get Started"
+  },
+  {
+    "id": "opt-202-pro",
+    "path": "/subscribe/checkout/pro",
+    "tier": "Professional",
+    "price": 49,
+    "currency": "USD",
+    "billingCycle": "monthly",
+    "cta": "Try Pro Free"
+  },
+  {
+    "id": "opt-303-ent",
+    "path": "/subscribe/contact/enterprise",
+    "tier": "Enterprise",
+    "price": "Custom",
+    "currency": "USD",
+    "billingCycle": "annual",
+    "cta": "Contact Sales"
+  }
+]

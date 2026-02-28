@@ -1,0 +1,62 @@
+[
+  {
+    "id": "st_01",
+    "name": "Alex Johnson",
+    "marks": { "physics": 82, "chemistry": 88, "math": 95 },
+    "total": 265
+  },
+  {
+    "id": "st_02",
+    "name": "Beatrice Hall",
+    "marks": { "physics": 75, "chemistry": 72, "math": 80 },
+    "total": 227
+  },
+  {
+    "id": "st_03",
+    "name": "Carlos Mendez",
+    "marks": { "physics": 91, "chemistry": 94, "math": 88 },
+    "total": 273
+  },
+  {
+    "id": "st_04",
+    "name": "Diana Prince",
+    "marks": { "physics": 64, "chemistry": 68, "math": 70 },
+    "total": 202
+  },
+  {
+    "id": "st_05",
+    "name": "Evan Wright",
+    "marks": { "physics": 88, "chemistry": 85, "math": 92 },
+    "total": 265
+  },
+  {
+    "id": "st_06",
+    "name": "Fiona Chen",
+    "marks": { "physics": 77, "chemistry": 80, "math": 75 },
+    "total": 232
+  },
+  {
+    "id": "st_07",
+    "name": "George Miller",
+    "marks": { "physics": 95, "chemistry": 92, "math": 98 },
+    "total": 285
+  },
+  {
+    "id": "st_08",
+    "name": "Hannah Abbott",
+    "marks": { "physics": 55, "chemistry": 60, "math": 58 },
+    "total": 173
+  },
+  {
+    "id": "st_09",
+    "name": "Isaac Foster",
+    "marks": { "physics": 84, "chemistry": 82, "math": 86 },
+    "total": 252
+  },
+  {
+    "id": "st_10",
+    "name": "Julia Vane",
+    "marks": { "physics": 70, "chemistry": 75, "math": 72 },
+    "total": 217
+  }
+]

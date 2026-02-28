@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+import { Menu } from "lucide-react";
+import { X } from "lucide-react";
 
 const navigationData = [
   {
@@ -34,23 +36,37 @@ const navigationData = [
 ];
 
 const CustomNav = () => {
+  const [open, setOpen] = useState(false);
+  const links = navigationData.map((route) => (
+    <li>
+      {" "}
+      <a href={route.fullUrl}>{route.title}</a>
+    </li>
+  ));
+
   return (
-    <nav>
+    <nav className="flex justify-between">
       {/* one system */}
       {/* <ul className="flex gap-2">
         <li href="/">Home</li>
         <li href="/about">About</li>
         <li href="/blog">Blog</li>
       </ul> */}
-
-      <ul className="flex gap-4">
-        {navigationData.map((route) => (
-          <li>
-            {" "}
-            <a href={route.fullUrl}>{route.title}</a>
-          </li>
-        ))}
+      <span onClick={() => setOpen(!open)} className="flex">
+        {open ? <Menu className="md:hidden" /> : <X />}
+        {
+          open || <ul className="md:hidden">
+          {
+            links
+          }
+        </ul>
+        }
+        <p>NavBar</p>
+      </span>
+      <ul className="hidden md:flex gap-4">
+        {links}
       </ul>
+      <p>signin</p>
     </nav>
   );
 };
