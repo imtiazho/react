@@ -1,0 +1,8 @@
+.rott-main{
+    display: flex;
+    gap: 1rem;
+}
+
+nav a.active{
+    color: red;
+}
