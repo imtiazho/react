@@ -9,7 +9,7 @@ const UncontrolledForm = () => {
         console.log(emailRef.current.value);
         console.log(passwordRef.current.value);
     }
-
+    
   return (
     <div>
       <form onSubmit={handleSubmit}>
