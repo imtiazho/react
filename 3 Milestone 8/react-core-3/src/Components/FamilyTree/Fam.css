@@ -1,0 +1,11 @@
+div {
+  border: 2px solid black;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+div section{
+    display: flex;
+    justify-content: space-around;
+}
