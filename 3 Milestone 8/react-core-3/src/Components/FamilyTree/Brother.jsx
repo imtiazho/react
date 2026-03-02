@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { use } from "react";
+import { MoneyContext } from "./FamilyTree";
 
 const Brother = () => {
-    return (
-        <div>
-            Brother
-        </div>
-    );
+  const [money, setMoney] = use(MoneyContext);
+  return (
+    <div>
+      Brother
+      <button onClick={() => setMoney(money + 100)}>Add 100 Taka</button>
+    </div>
+  );
 };
 
 export default Brother;

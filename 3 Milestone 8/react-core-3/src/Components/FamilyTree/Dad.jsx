@@ -1,14 +1,16 @@
-import React from "react";
+import React, { use } from "react";
 import Myself from "./Myself";
 import Brother from "./Brother";
 import Sister from "./Sister";
+import { MoneyContext } from "./FamilyTree";
 
-const Dad = () => {
+const Dad = ({special}) => {
+    const [money, setMoney] = use(MoneyContext);
   return (
     <div>
-      Dad
+      Dad got {money} taka
       <section>
-        <Myself></Myself>
+        <Myself special={special}></Myself>
         <Brother></Brother>
         <Sister></Sister>
       </section>

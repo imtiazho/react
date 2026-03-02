@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { use } from 'react';
+import { MoneyContext } from './FamilyTree';
 
 const Sister = () => {
+    const [money, setMoney] = use(MoneyContext);
     return (
-        <div>
+        <div onClick={() => setMoney(money + 100)}>
             Sister
         </div>
     );
