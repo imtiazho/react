@@ -13,7 +13,7 @@ const Books = ({data}) => {
     // const booksPromise = fetch('booksData.json').then(res => res.json())
     
     return (
-        <div className='grid grid-cols-3 gap-4'>
+        <div className='grid grid-cols-3 justify-between gap-4'>
             {/* <Suspense fallback={<span>Loading</span>}>
                 <Book></Book>
             </Suspense> */}

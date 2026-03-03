@@ -1,11 +1,17 @@
 import React from "react";
+import { Link } from "react-router";
 
 const Header = () => {
-    const links = 
+  const links = (
     <>
-    <li className="m-2">Home</li>
-    <li className="m-2">About</li>
+      <Link to="/" className="m-2">
+        Home
+      </Link>
+      <Link to="/about" className="m-2">
+        About
+      </Link>
     </>
+  );
   return (
     <div>
       <div className="navbar bg-base-100">
@@ -38,9 +44,7 @@ const Header = () => {
           <a className="btn btn-ghost text-xl">Boi Poka</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            {links}
-          </ul>
+          <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
           <a className="btn">Button</a>

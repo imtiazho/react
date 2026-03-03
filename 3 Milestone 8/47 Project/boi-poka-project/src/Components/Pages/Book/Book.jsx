@@ -1,12 +1,11 @@
 import React from "react";
 import { FaStarHalfAlt } from "react-icons/fa";
-
-// https://web.programming-hero.com/update-1/video/update-1-47-6-implement-dynamic-routes
+import { Link } from "react-router";
 
 const Book = ({ book }) => {
-  console.log(book);
+  
   return (
-    <div>
+    <Link to={`/bookDetails/${book.bookId}`}>
       <div className="card bg-base-100 w-96 shadow-sm p-4">
         <figure className="h-60 bg-gray-300">
           <img className="h-full p-2" src={book.image} alt="Shoes" />
@@ -22,11 +21,13 @@ const Book = ({ book }) => {
           </p>
           <div className="card-actions justify-end">
             <div className="badge badge-outline">{book.category}</div>
-            <div className="badge badge-outline">{book.rating} <FaStarHalfAlt /></div>
+            <div className="badge badge-outline">
+              {book.rating} <FaStarHalfAlt />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
