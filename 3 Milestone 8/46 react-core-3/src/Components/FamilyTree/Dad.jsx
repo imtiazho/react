@@ -4,8 +4,8 @@ import Brother from "./Brother";
 import Sister from "./Sister";
 import { MoneyContext } from "./FamilyTree";
 
-const Dad = ({special}) => {
-    const [money, setMoney] = use(MoneyContext);
+const Dad = ({ special }) => {
+  const [money, setMoney] = use(MoneyContext);
   return (
     <div>
       Dad got {money} taka
