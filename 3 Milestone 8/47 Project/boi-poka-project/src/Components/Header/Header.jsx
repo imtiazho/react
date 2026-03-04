@@ -13,6 +13,9 @@ const Header = () => {
       <Link to="/readlist" className="m-2">
         Read List
       </Link>
+      <Link to="/map" className="m-2">
+        Map
+      </Link>
     </>
   );
   return (

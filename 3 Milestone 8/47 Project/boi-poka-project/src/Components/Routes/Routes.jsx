@@ -6,6 +6,7 @@ import Home from '../Pages/Home/Home';
 import About from '../Pages/About/About';
 import BookDetails from '../BookDetails/BookDetails';
 import ReadList from '../Pages/ReadList/ReadList';
+import GoogleMap from '../Pages/GoogleMap/GoogleMap';
 
 
 export const router = createBrowserRouter([
@@ -23,6 +24,10 @@ export const router = createBrowserRouter([
         {
           path: '/about',
           Component: About
+        },
+        {
+          path: '/map',
+          Component: GoogleMap
         },
         {
           path: 'readlist',
