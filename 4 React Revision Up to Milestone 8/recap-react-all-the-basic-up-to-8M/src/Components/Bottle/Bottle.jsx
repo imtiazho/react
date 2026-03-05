@@ -2,7 +2,7 @@ import React, { use } from 'react';
 
 const Bottle = ({bottlePromise}) => {
     const data = use(bottlePromise);
-    console.log(data);
+    // console.log(data);
     return (
         <div>
             Bottle
