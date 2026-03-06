@@ -54,7 +54,7 @@ function App() {
   // };
 
   // const marksDataPromise = fetchMarks();
-  const marksDataPromise = getMarks();
+  // const marksDataPromise = getMarks();
 
   return (
     <>
@@ -76,9 +76,9 @@ function App() {
         <ReactChart marksDataPromise={marksDataPromise}></ReactChart>
       </Suspense> */}
 
-      <Suspense fallback={<h1>Loading...</h1>}>
+      {/* <Suspense fallback={<h1>Loading...</h1>}>
         <ReactChart marksDataPromise={marksDataPromise}></ReactChart>
-      </Suspense>
+      </Suspense> */}
     </>
   );
 }

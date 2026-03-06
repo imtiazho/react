@@ -1,5 +1,5 @@
 {
-  "name": "recap-react-all-the-basic-up-to-8m",
+  "name": "routing-system",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,12 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@recharts/devtools": "^0.0.8",
-    "axios": "^1.13.6",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-router-dom": "^7.13.1",
-    "recharts": "^3.7.0"
+    "react-router": "^7.13.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
