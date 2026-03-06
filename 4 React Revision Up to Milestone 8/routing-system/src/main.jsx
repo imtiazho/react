@@ -16,6 +16,7 @@ import UsersSec from "./Components/UsersSec/UsersSec.jsx";
 import UserDetails from "./Components/UserDetails/UserDetails.jsx";
 import FormPractice from "./Components/FormPractice/FormPractice.jsx";
 import NotFounded from "./Components/NotFounded/NotFounded.jsx";
+import Fam from "./Components/FamTree/Fam.jsx";
 
 const userPromise = fetch("https://jsonplaceholder.typicode.com/users").then(
   (res) => res.json(),
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: 'form-practice',
         Component: FormPractice
+      },
+      {
+        path: "famT",
+        Component: Fam
       },
       {
         path: "*",
