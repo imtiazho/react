@@ -1,5 +1,6 @@
 import React from "react";
 import { FaRegCalendarAlt } from "react-icons/fa";
+import Chart from "../Chart/Chart";
 
 const Attendance = ({ eachData }) => {
   return (
@@ -42,14 +43,14 @@ const Attendance = ({ eachData }) => {
           </p>
         </div>
         <div className="text-center">
-          <p className="mb-[.25rem] text-[14px] text-[#6A7287]">Halfday</p>
+          <p className="mb-[.25rem] text-[14px] text-[#6A7287]">Half Day</p>
           <p className="text-black font-[600]">
             {eachData.attendance_summary.metrics.half_day}
           </p>
         </div>
       </div>
 
-      
+      <Chart eachData={eachData.attendance_summary.metrics}></Chart>
     </div>
   );
 };

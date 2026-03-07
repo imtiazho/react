@@ -13,12 +13,12 @@
       }
     },
     "attendance_summary": {
-      "total_working_days": 28,
+      "total_working_days": 30,
       "metrics": {
-        "present": 25,
-        "absent": 2,
-        "half_day": 0,
-        "late": 1
+        "present": 22,
+        "absent": 3,
+        "half_day": 3,
+        "late": 2
       },
       "weekly_history": [
         { "day": "Monday", "status": "Present" },
