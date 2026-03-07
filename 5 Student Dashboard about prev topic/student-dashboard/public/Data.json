@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "student_info": {
+      "name": "Imtiaz Hossain",
+      "img": "https://i.ibb.co.com/fDzYJ67/uers-2.jpg",
+      "student_id": "#ST1234546",
+      "class": "III, C",
+      "roll_no": 36545,
+      "status": {
+        "term": "1st Quarterly",
+        "result": "Pass"
+      }
+    },
+    "attendance_summary": {
+      "total_working_days": 28,
+      "metrics": {
+        "present": 25,
+        "absent": 2,
+        "half_day": 0,
+        "late": 1
+      },
+      "weekly_history": [
+        { "day": "Monday", "status": "Present" },
+        { "day": "Tuesday", "status": "Present" },
+        { "day": "Wednesday", "status": "Present" },
+        { "day": "Thursday", "status": "Present" },
+        { "day": "Friday", "status": "Absent" },
+        { "day": "Saturday", "status": "Holiday" },
+        { "day": "Sunday", "status": "Holiday" }
+      ]
+    },
+    "todays_classes": {
+      "date": "16 May 2024",
+      "schedule": [
+        {
+          "subject": "English",
+          "time": "09:00 - 09:45 AM",
+          "status": "Completed"
+        },
+        {
+          "subject": "Chemistry",
+          "time": "10:45 - 11:30 AM",
+          "status": "Completed"
+        },
+        {
+          "subject": "Physics",
+          "time": "11:30 - 12:15 AM",
+          "status": "Inprogress"
+        }
+      ]
+    },
+    "upcoming_exams": [
+      {
+        "term": "1st Quarterly",
+        "subject": "Mathematics",
+        "date": "06 May 2024",
+        "time": "01:30 - 02:15 PM",
+        "room_no": 15,
+        "countdown": "19 Days More"
+      },
+      {
+        "term": "2nd Quarterly",
+        "subject": "Physics",
+        "date": "07 May 2024",
+        "time": "01:30 - 02:15 PM",
+        "room_no": 15,
+        "countdown": "20 Days More"
+      }
+    ],
+    "navigation_actions": ["Pay Fees", "Exam Result", "Calendar", "Attendance"],
+    "performance_tracking": {
+      "academic_year": "2024 - 2025",
+      "metrics": ["Avg. Exam Score", "Avg. Attendance"],
+      "chart_data": [
+        { "period": "Quarter 1", "avg_exam_score": 75, "avg_attendance": 85 },
+        { "period": "Quarter 2", "avg_exam_score": 68, "avg_attendance": 78 },
+        { "period": "Half yearly", "avg_exam_score": 65, "avg_attendance": 75 },
+        { "period": "Model", "avg_exam_score": 68, "avg_attendance": 78 },
+        { "period": "Final", "avg_exam_score": 75, "avg_attendance": 85 }
+      ]
+    },
+    "home_works": [
+      {
+        "subject": "Physics",
+        "topic": "Write about Theory of Pendulum",
+        "instructor": "Aaron",
+        "due_date": "16 Jun 2024",
+        "completion_percentage": 90
+      },
+      {
+        "subject": "Chemistry",
+        "topic": "Chemistry - Change of Elements",
+        "instructor": "Hellana",
+        "due_date": "16 Jun 2024",
+        "completion_percentage": 65
+      },
+      {
+        "subject": "Maths",
+        "topic": "Maths - Problems to Solve Page 21",
+        "instructor": "Morgan",
+        "due_date": "21 Jun 2024",
+        "completion_percentage": 30
+      },
+      {
+        "subject": "English",
+        "topic": "English - Vocabulary Introduction",
+        "instructor": "Daniel Josua",
+        "due_date": "21 Jun 2024",
+        "completion_percentage": 10
+      }
+    ],
+    "class_faculties": [
+      { "name": "Aaron", "department": "Chemistry" },
+      { "name": "Hellana", "department": "English" },
+      { "name": "Morgan", "department": "Physics" },
+      { "name": "Daniel Josua", "department": "Spanish" },
+      { "name": "Teresa", "department": "Maths" }
+    ],
+    "leave_status": [
+      { "type": "Emergency Leave", "date": "15 Jun 2024", "status": "Pending" },
+      { "type": "Medical Leave", "date": "15 Jun 2024", "status": "Approved" },
+      { "type": "Medical Leave", "date": "16 Jun 2024", "status": "Declined" },
+      { "type": "Fever", "date": "16 Jun 2024", "status": "Approved" }
+    ],
+    "exam_result_1st_quarter": {
+      "scores": {
+        "Maths": 100,
+        "Physics": 92,
+        "Chemistry": 90,
+        "English": 82,
+        "Science": 90
+      }
+    },
+    "fees_reminder": [
+      {
+        "category": "Transport Fees",
+        "amount": 2500,
+        "due_date": "25 May 2024",
+        "status": "Paid"
+      },
+      {
+        "category": "Book Fees",
+        "amount": 2500,
+        "due_date": "25 May 2024",
+        "status": "Paid"
+      },
+      {
+        "category": "Exam Fees",
+        "amount": 2500,
+        "due_date": "25 May 2024",
+        "status": "Paid"
+      },
+      {
+        "category": "Mess Fees",
+        "amount": 2650,
+        "due_date": "27 May 2024",
+        "status": "Due",
+        "late_fee": 150
+      },
+      {
+        "category": "Hostel",
+        "amount": 2500,
+        "due_date": "25 May 2024",
+        "status": "Paid"
+      }
+    ],
+    "notice_board": [
+      { "title": "New Syllabus Instructions", "added_on": "11 Mar 2024" },
+      {
+        "title": "World Environment Day Program...!!!",
+        "added_on": "21 Apr 2024"
+      },
+      { "title": "Exam Preparation Notification!", "added_on": "13 Mar 2024" },
+      { "title": "Online Classes Preparation", "added_on": "24 May 2024" },
+      { "title": "Exam Time Table Release", "added_on": "24 May 2024" },
+      { "title": "English Exam Preparation", "added_on": "23 Mar 2024" }
+    ],
+    "syllabus_completion": {
+      "subjects": [
+        { "name": "Maths", "progress_percent": 30 },
+        { "name": "Physics", "progress_percent": 45 },
+        { "name": "Chemistry", "progress_percent": 60 },
+        { "name": "Botany", "progress_percent": 50 },
+        { "name": "English", "progress_percent": 75 },
+        { "name": "Spanish", "progress_percent": 85 },
+        { "name": "Japanese", "progress_percent": 90 }
+      ]
+    },
+    "todo_list": [
+      {
+        "task": "Send Reminder to Students",
+        "time": "01:00 PM",
+        "status": "Completed"
+      },
+      {
+        "task": "Create Routine to new staff",
+        "time": "04:50 PM",
+        "status": "Inprogress"
+      },
+      {
+        "task": "Extra Class Info to Students",
+        "time": "04:55 PM",
+        "status": "Yet To Start"
+      },
+      {
+        "task": "Fees for Upcoming Academics",
+        "time": "04:55 PM",
+        "status": "Yet To Start"
+      },
+      {
+        "task": "English - Essay on Visit",
+        "time": "05:55 PM",
+        "status": "Yet To Start"
+      }
+    ]
+  }
+]

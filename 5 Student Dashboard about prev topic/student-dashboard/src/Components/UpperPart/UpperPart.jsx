@@ -1,23 +1,21 @@
 import React from 'react';
+import Profile from '../Profile/Profile';
+import TodayClass from '../TodayClass/TodayClass';
 
-const UpperPart = () => {
-    // #202C4B
+const UpperPart = ({eachData}) => {
+    // 
+    
     return (
         <div className='grid grid-cols-3 gap-6'>
             <div className='col-span-2'>
                 <div className='grid grid-cols-2 gap-6'>
-                    <div className='border p-2'>First 
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
+                    <div className='flex flex-col gap-6'>
+                        <div>
+                            <Profile eachData={eachData}></Profile>
+                        </div>
+                        <div>
+                            <TodayClass></TodayClass>
+                        </div>
                     </div>
                     <div className='border p-2'>Second
                         <br />
