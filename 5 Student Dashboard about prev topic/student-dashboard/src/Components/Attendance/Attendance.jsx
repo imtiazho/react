@@ -51,6 +51,25 @@ const Attendance = ({ eachData }) => {
       </div>
 
       <Chart eachData={eachData.attendance_summary.metrics}></Chart>
+
+      <div className="border-[0.5px] border-[#ddd] bg-[#F8FAFC] p-5">
+        <div className="flex justify-between items-center mb-4">
+          <p className="text-[#202C4B] text-[15px] font-[600]">Last 7 Days</p>
+          <p className="text-[#6A7287] text-[12px]">
+            14 May 2024 - 21 May 2024
+          </p>
+        </div>
+        <div className="flex gap-2">
+          {eachData.attendance_summary.weekly_history.map((day, index) => (
+            <span
+              key={index}
+              className={`leading-[30px] px-[10px] text-[15px] font-[700]  rounded ${day.status === "Present" ? "bg-[#1ABE17] text-white" : "bg-[#dfdfdf] text-black"} `}
+            >
+              {day.day[0]}
+            </span>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

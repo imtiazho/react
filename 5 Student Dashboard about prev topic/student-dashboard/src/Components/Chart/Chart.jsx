@@ -28,6 +28,7 @@ const Chart = ({ eachData }) => {
       },
     ],
   });
+
   return (
     <div className="p-6">
       <ReactApexChart

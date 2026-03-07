@@ -25,9 +25,9 @@
         { "day": "Tuesday", "status": "Present" },
         { "day": "Wednesday", "status": "Present" },
         { "day": "Thursday", "status": "Present" },
-        { "day": "Friday", "status": "Absent" },
+        { "day": "Friday", "status": "Holiday" },
         { "day": "Saturday", "status": "Holiday" },
-        { "day": "Sunday", "status": "Holiday" }
+        { "day": "Sunday", "status": "Absent" }
       ]
     },
     "todays_classes": {
