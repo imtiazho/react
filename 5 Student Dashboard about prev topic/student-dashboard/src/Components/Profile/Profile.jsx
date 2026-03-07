@@ -3,7 +3,7 @@ import { GoDotFill } from "react-icons/go";
 
 const Profile = ({ eachData }) => {
   return (
-    <div className="bg-[#202C4B] p-4 text-white rounded-lg">
+    <div className="bg-[#202C4B] p-4 text-white rounded-lg shadow-[0px_4.4px_12px_-1px_rgba(222,222,222,0.3607843137)]">
       <div className="grid grid-cols-7 gap-4">
         <div className="col-span-2">
           <img

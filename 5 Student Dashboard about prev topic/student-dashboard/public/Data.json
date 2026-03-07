@@ -35,17 +35,20 @@
       "schedule": [
         {
           "subject": "English",
+          "img": "https://i.ibb.co.com/fDzYJ67/uers-2.jpg",
           "time": "09:00 - 09:45 AM",
           "status": "Completed"
         },
         {
           "subject": "Chemistry",
+          "img": "https://i.ibb.co.com/4W51h0V/user.jpg",
           "time": "10:45 - 11:30 AM",
           "status": "Completed"
         },
         {
           "subject": "Physics",
           "time": "11:30 - 12:15 AM",
+          "img": "https://i.ibb.co.com/dPk2rDc/General-Surgery.jpg",
           "status": "Inprogress"
         }
       ]

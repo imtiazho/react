@@ -9,3 +9,8 @@ body{
   font-family: "Roboto", sans-serif;
   background-color: #FBFBFD;
 }
+.focusDisable:focus,
+.focusDisable:focus-within{
+  outline-offset: 0px !important;
+  outline: 0px solid black !important;
+}

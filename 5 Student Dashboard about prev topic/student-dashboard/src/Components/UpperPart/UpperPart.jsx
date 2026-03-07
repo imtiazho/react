@@ -1,9 +1,9 @@
 import React from 'react';
 import Profile from '../Profile/Profile';
 import TodayClass from '../TodayClass/TodayClass';
+import Attendance from '../Attendance/Attendance';
 
 const UpperPart = ({eachData}) => {
-    // 
     
     return (
         <div className='grid grid-cols-3 gap-6'>
@@ -14,34 +14,11 @@ const UpperPart = ({eachData}) => {
                             <Profile eachData={eachData}></Profile>
                         </div>
                         <div>
-                            <TodayClass></TodayClass>
+                            <TodayClass eachData={eachData}></TodayClass>
                         </div>
                     </div>
-                    <div className='border p-2'>Second
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
+                    <div>
+                        <Attendance eachData={eachData}></Attendance>
                     </div>
                 </div>
                 <div className='mt-6 grid grid-cols-4 gap-6'>
