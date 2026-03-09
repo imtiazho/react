@@ -18,7 +18,7 @@ const Attendance = ({ eachData }) => {
           </select>
         </div>
       </div>
-      {/* #3D5EE1 */}
+      
       <div className="border my-6 border-[#ddd]"></div>
       <p className="text-[#6A7287] text-[14px] font-[500] leading-[1] flex gap-1 items-center">
         {" "}
