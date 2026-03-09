@@ -81,5 +81,4 @@ const UpperPart = ({ eachData }) => {
   );
 };
 
-
 export default UpperPart;
