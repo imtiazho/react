@@ -59,7 +59,7 @@
         "subject": "Mathematics",
         "date": "06 May 2024",
         "time": "01:30 - 02:15 PM",
-        "room_no": 15,
+        "room_no": 105,
         "countdown": "19 Days More"
       },
       {
@@ -67,20 +67,22 @@
         "subject": "Physics",
         "date": "07 May 2024",
         "time": "01:30 - 02:15 PM",
-        "room_no": 15,
+        "room_no": 304,
         "countdown": "20 Days More"
       }
     ],
     "navigation_actions": ["Pay Fees", "Exam Result", "Calendar", "Attendance"],
     "performance_tracking": {
-      "academic_year": "2024 - 2025",
+      "academic_year": [
+        "2024 - 2025", "2022 - 2023", "2021 - 2022"
+      ],
       "metrics": ["Avg. Exam Score", "Avg. Attendance"],
       "chart_data": [
-        { "period": "Quarter 1", "avg_exam_score": 75, "avg_attendance": 85 },
-        { "period": "Quarter 2", "avg_exam_score": 68, "avg_attendance": 78 },
-        { "period": "Half yearly", "avg_exam_score": 65, "avg_attendance": 75 },
-        { "period": "Model", "avg_exam_score": 68, "avg_attendance": 78 },
-        { "period": "Final", "avg_exam_score": 75, "avg_attendance": 85 }
+        { "period": "Quarter 1", "avg_exam_score": 30, "avg_attendance": 85, "absent": 4 },
+        { "period": "Quarter 2", "avg_exam_score": 68, "avg_attendance": 78, "absent": 5 },
+        { "period": "Half yearly", "avg_exam_score": 54, "avg_attendance": 75, "absent": 2 },
+        { "period": "Model", "avg_exam_score": 34, "avg_attendance": 78, "absent": 8 },
+        { "period": "Final", "avg_exam_score": 45, "avg_attendance": 85, "absent": 23 }
       ]
     },
     "home_works": [

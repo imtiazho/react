@@ -3,7 +3,12 @@ import Profile from "../Profile/Profile";
 import TodayClass from "../TodayClass/TodayClass";
 import Attendance from "../Attendance/Attendance";
 import ExamSchedule from "../ExamSchedule/ExamSchedule";
-import { BsCalendar3, BsCashStack, BsClipboardCheck, BsPersonCheck } from "react-icons/bs";
+import {
+  BsCalendar3,
+  BsCashStack,
+  BsClipboardCheck,
+  BsPersonCheck,
+} from "react-icons/bs";
 
 const UpperPart = ({ eachData }) => {
   const actions = [
@@ -71,11 +76,10 @@ const UpperPart = ({ eachData }) => {
         </div>
       </div>
 
-      <div>
-        <ExamSchedule eachData={eachData}></ExamSchedule>
-      </div>
+      <ExamSchedule eachData={eachData}></ExamSchedule>
     </div>
   );
 };
+
 
 export default UpperPart;

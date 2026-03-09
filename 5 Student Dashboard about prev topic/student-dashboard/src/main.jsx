@@ -10,6 +10,7 @@ import {
 import Root from "./Components/Root/Root.jsx";
 import Content from "./Components/Content/Content.jsx";
 import StudentDetails from "./Components/StudentDetails/StudentDetails.jsx";
+import "cally";
 
 const router = createBrowserRouter([
   {

@@ -14,7 +14,7 @@ const Content = () => {
         return (
           <div key={eachData.id}>
             <UpperPart eachData={eachData}></UpperPart>
-            <MiddlePart></MiddlePart>
+            <MiddlePart eachData={eachData}></MiddlePart>
             <DownMiddle></DownMiddle>
             <BottomPart></BottomPart>
           </div>
