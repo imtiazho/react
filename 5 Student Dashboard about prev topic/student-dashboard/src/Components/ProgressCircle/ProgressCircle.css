@@ -1,0 +1,28 @@
+.progress-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svgCircle {
+  transform: rotate(-90deg);
+}
+
+.progress-bg {
+  fill: none;
+  stroke: #e6e6e6;
+}
+
+.progress-bar {
+  fill: none;
+  stroke: green;
+  transition: stroke-dashoffset 0.4s ease;
+  stroke-linecap: round;
+}
+
+.progress-text {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+}
