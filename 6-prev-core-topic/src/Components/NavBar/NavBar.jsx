@@ -7,6 +7,9 @@ const NavBar = () => {
       <NavLink className={({ isActive }) => isActive ? "bg-blue-500 text-white p-2 rounded" : "text-white-600 p-2"} to='/'>Home</NavLink>
       <NavLink className={({ isActive }) => isActive ? "bg-blue-500 text-white p-2 rounded" : "text-white-600 p-2"} to='/about'>About</NavLink>
       <NavLink className={({ isActive }) => isActive ? "bg-blue-500 text-white p-2 rounded" : "text-white-600 p-2"} to='/students'>Students</NavLink>
+      <NavLink className={({ isActive }) => isActive ? "bg-blue-500 text-white p-2 rounded" : "text-white-600 p-2"} to='/bottle'>Bottles</NavLink>
+      <NavLink className={({ isActive }) => isActive ? "bg-blue-500 text-white p-2 rounded" : "text-white-600 p-2"} to='/chart'>Chart</NavLink>
+      <NavLink className={({ isActive }) => isActive ? "bg-blue-500 text-white p-2 rounded" : "text-white-600 p-2"} to='/famtree'>Fam Tree</NavLink>
     </>
   );
   return (
